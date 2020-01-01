@@ -1,3 +1,5 @@
+# verified by DMOJ
+
 def find_next(year):
     if (is_unique(year) == False):
         return find_next(year + 1)
