@@ -1,8 +1,8 @@
-import sys
+'''
 import math
 
-n = int(sys.stdin.readline())
-woods = sorted([int(x) for x in sys.stdin.readline().split()])
+n = int(input())
+woods = sorted([int(x) for x in input().split()])
 
 index = {}
 for i in range(0, len(woods)):
@@ -25,4 +25,5 @@ for x in index:
     if index[x] == highest:
         amt += 1
 
-print "%s %s" % (highest/2, amt)
+print ("%s %s" % (highest/2, amt))
+'''

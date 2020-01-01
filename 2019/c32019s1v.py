@@ -1,3 +1,5 @@
+# verified correct by DMOJ
+
 actions = list(input())
 arr = [1,2,3,4]
 

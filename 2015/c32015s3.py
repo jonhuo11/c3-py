@@ -1,11 +1,10 @@
-import sys
-
-g = int(sys.stdin.readline())
-p = int(sys.stdin.readline())
+'''
+g = int(input())
+p = int(input())
 
 gates = [False for x in range(0,g)]
 
-planes = [int(sys.stdin.readline()) for x in range(0,p)]
+planes = [int(input()) for x in range(0,p)]
 
 planes = sorted(planes)
 amt = 0
@@ -20,4 +19,5 @@ for p in range(0,len(planes)):
             amt += 1
             break
 
-print amt
+print(amt)
+'''

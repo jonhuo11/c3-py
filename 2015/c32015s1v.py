@@ -1,10 +1,9 @@
-import sys
-
-n = int(sys.stdin.readline())
+# verified by DMOJ
+n = int(input())
 
 nums = []
 for x in range(0, n):
-    y = int(sys.stdin.readline())
+    y = int(input())
     if y != 0:
         nums.append(y)
     else:

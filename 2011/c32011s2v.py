@@ -1,3 +1,5 @@
+# verified by DMOJ
+
 n = int(input())
 right = []
 response = []

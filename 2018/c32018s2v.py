@@ -1,3 +1,5 @@
+# verified by DMOJ
+
 # determine rotation by finding the corner with the smallest number
 # 4 cases for each possible corner
 

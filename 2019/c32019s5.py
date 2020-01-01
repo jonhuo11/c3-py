@@ -1,3 +1,4 @@
+'''
 #for each node in the triangle, check to see if a subtriangle can be created from it
 #create a function that computes the maximum element of a subtriangle
 
@@ -85,3 +86,4 @@ for node in nodes:
     if (ret > -1):
         sum += ret
 print(sum)
+'''

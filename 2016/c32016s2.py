@@ -1,13 +1,8 @@
-# Author : @jonathanhuo11
-# Description : Problem S2 Solution, in Python
-
-import sys
-import re
-
-q_type = int(sys.stdin.readline())
-amt = int(sys.stdin.readline())
-d_speeds = [int(item) for item in sys.stdin.readline().split()]
-p_speeds = [int(item) for item in sys.stdin.readline().split()]
+'''
+q_type = int(input())
+amt = int(input())
+d_speeds = [int(item) for item in input().split()]
+p_speeds = [int(item) for item in input().split()]
 
 ret = 0
 if q_type == 1:
@@ -23,4 +18,5 @@ else:
     for i in range(0, len(d_speeds)):
         ret += max(d_speeds[i], p_speeds[i])
 
-print ret
+print(ret)
+'''

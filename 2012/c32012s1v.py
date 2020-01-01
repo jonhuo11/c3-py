@@ -1,3 +1,5 @@
+# verified by DMOJ
+
 out = []
 def solve(current, st):
     # the current jersey numbers being used, st of useable jersey numbers, depth of recursion

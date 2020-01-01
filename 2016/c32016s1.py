@@ -1,12 +1,9 @@
-# Author : @jonathanhuo11
-# Description : Problem S1 Solution, in Python
-
-import sys
-
-str_a = sys.stdin.readline()
-str_b = sys.stdin.readline()
+'''
+str_a = input()
+str_b = input()
 
 from sets import Set
+import sys
 
 chars = Set([char for char in str_a])
 
@@ -19,15 +16,15 @@ for char in str_b:
     elif '\n' in chars:
         chars.remove('\n')
     else:
-        print 'N'
+        print("N")
         sys.exit()
 
 for i in range(0, wc_count):
     try:
         chars.pop()
     except Exception:
-        print 'N'
+        print("N")
         sys.exit()
 
-print 'A'
-sys.exit()
+print("N")
+'''

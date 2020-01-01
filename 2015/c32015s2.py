@@ -1,13 +1,12 @@
-import sys
-
-j = int(sys.stdin.readline())
-a = int(sys.stdin.readline())
+'''
+j = int(input())
+a = int(input())
 
 jerseys = []
 requests = []
 
 for i in range(0,j):
-    s = sys.stdin.readline().split()[0]
+    s = input().split()[0]
     r = 0
     if s == "S":
         r = 1
@@ -16,8 +15,9 @@ for i in range(0,j):
     if s == "L":
         r = 3
     jerseys.append([r, i+1])
+
 for i in range(0,a):
-    s = sys.stdin.readline().split()
+    s = input().split()
     r = 0
     if s[0] == "S":
         r = 1
@@ -33,4 +33,5 @@ for re in requests:
         if je[1] == re[1] and je[0] >= re[0]:
             amt += 1
 
-print amt
+print(amt)
+'''

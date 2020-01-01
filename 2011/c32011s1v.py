@@ -1,3 +1,5 @@
+# verified correct by DMOJ
+
 n = int(input())
 lines = []
 for i in range(n):

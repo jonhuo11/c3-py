@@ -1,8 +1,8 @@
-import sys
+# verified by DMOJ
 
-n = int(sys.stdin.readline())
-swifts = [int(x) for x in sys.stdin.readline().split()]
-semaphores = [int(x) for x in sys.stdin.readline().split()]
+n = int(input())
+swifts = [int(x) for x in input().split()]
+semaphores = [int(x) for x in input().split()]
 
 k = 0
 x = 0
@@ -22,6 +22,6 @@ for r in range(0,n):
         zero = False
 
 if zero == True:
-    print 0
+    print(0)
 if zero == False:
-    print x + 1
+    print(x + 1)

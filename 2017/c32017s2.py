@@ -1,8 +1,8 @@
-import sys
+'''
 import math
 
-n = int(sys.stdin.readline())
-measures = sorted([int(x) for x in sys.stdin.readline().split()], reverse=True)
+n = int(input())
+measures = sorted([int(x) for x in input().split()], reverse=True)
 m1 = measures
 
 ret = []
@@ -36,4 +36,5 @@ for x in ret:
     out += str(x)
     out += " "
 
-print out
+print(out)
+'''

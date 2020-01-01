@@ -1,3 +1,4 @@
+'''
 def parse(inp):
     input_arr = list(inp)
     input_arr.append(" ")
@@ -20,3 +21,4 @@ inp = ""
 for i in range(n):
     inp += input()
 print(parse(inp))
+'''
