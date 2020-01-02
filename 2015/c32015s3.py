@@ -14,7 +14,7 @@ gates = [False for x in range(g)]
 amt = 0
 for plane in planes:
     past = False
-    for gt in reversed(range(plane + 1)):
+    for gt in range(plane, -1, -1):
         if gates[gt] == False:
             gates[gt] = True
             amt += 1
