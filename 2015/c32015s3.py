@@ -1,7 +1,6 @@
 # this problem is an optimization problem
 # on DMOJ this solution goes over the time limits
 
-
 import sys
 
 # num of gate

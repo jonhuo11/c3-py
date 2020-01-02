@@ -1,4 +1,4 @@
-CCC solutions written in python 3 by @jonhuo11, verified by DMOJ (https://dmoj.ca/)
+CCC solutions written in python 3 by @jonhuo11 and verified by DMOJ (https://dmoj.ca/)
 
 File naming convention: c3[year][level][verification status].py
 
