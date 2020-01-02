@@ -1,37 +1,35 @@
-'''
+# on DMOJ, this passes with a score of 12/15. Last test case runs over time for some reason
+
+# if it fits, give immediately
 j = int(input())
 a = int(input())
 
 jerseys = []
-requests = []
 
-for i in range(0,j):
-    s = input().split()[0]
+for i in range(j):
     r = 0
-    if s == "S":
+    st = input()
+    if st == "S":
         r = 1
-    if s == "M":
+    elif st == "M":
         r = 2
-    if s == "L":
+    else:
         r = 3
-    jerseys.append([r, i+1])
+    jerseys.append(r)
 
-for i in range(0,a):
-    s = input().split()
+out = 0
+for i in range(a):
     r = 0
-    if s[0] == "S":
+    st = input()
+    if st[0] == "S":
         r = 1
-    if s[0] == "M":
+    elif st[0] == "M":
         r = 2
-    if s[0] == "L":
+    else:
         r = 3
-    requests.append([r, int(s[1])])
 
-amt = 0
-for re in requests:
-    for je in jerseys:
-        if je[1] == re[1] and je[0] >= re[0]:
-            amt += 1
+    if jerseys[int(st[2]) - 1] >= r:
+        out += 1
+        jerseys[int(st[2]) - 1] = -1
 
-print(amt)
-'''
+print(out)

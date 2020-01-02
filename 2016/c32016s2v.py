@@ -1,4 +1,5 @@
-'''
+# verified by DMOJ
+
 q_type = int(input())
 amt = int(input())
 d_speeds = [int(item) for item in input().split()]
@@ -10,7 +11,7 @@ if q_type == 1:
     p_speeds = sorted(p_speeds)
 
     for i in range(0, len(d_speeds)):
-        ret += min(d_speeds[i], p_speeds[i])
+        ret += max(d_speeds[i], p_speeds[i])
 else:
     d_speeds = sorted(d_speeds, reverse=True)
     p_speeds = sorted(p_speeds)
@@ -19,4 +20,3 @@ else:
         ret += max(d_speeds[i], p_speeds[i])
 
 print(ret)
-'''

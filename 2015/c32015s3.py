@@ -1,23 +1,28 @@
-'''
+# this problem is an optimization problem
+# on DMOJ this solution goes over the time limits
+
+
+import sys
+
+# num of gate
 g = int(input())
+# num of plane
 p = int(input())
 
-gates = [False for x in range(0,g)]
+planes = [int(input()) - 1 for x in range(p)]
+gates = [False for x in range(g)]
 
-planes = [int(input()) for x in range(0,p)]
-
-planes = sorted(planes)
 amt = 0
-last = None
-for p in range(0,len(planes)):
-    if planes[p] == last:
-        continue
-    last = planes[p]
-    for i in range(0,planes[p]):
-        if gates[i] == False:
-            gates[i] = True
+for plane in planes:
+    past = False
+    for gt in reversed(range(plane + 1)):
+        if gates[gt] == False:
+            gates[gt] = True
             amt += 1
+            past = True
             break
+    if past == False:
+        print(amt)
+        sys.exit()
 
 print(amt)
-'''
