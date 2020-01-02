@@ -1,3 +1,5 @@
+# solution runs overtime on DMOJ
+
 '''
 #for each node in the triangle, check to see if a subtriangle can be created from it
 #create a function that computes the maximum element of a subtriangle
