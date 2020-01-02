@@ -1,4 +1,5 @@
 # this problem is an optimization problem
+# try using binary search tree/set to speed up to N log N
 # on DMOJ this solution goes over the time limits
 
 import sys
